@@ -8,6 +8,7 @@ import java.util.List;
 
 
 /**
+ * @author strangeOctopus
  * 加载Library Application加载
  */
 public class PluginClient {

@@ -30,6 +30,8 @@ public class mineApplication extends ProtocolApplication {
                         int a;
                         break;
                     }
+                    default:
+                        break;
                 }
                 return obj;
             }

@@ -1,6 +1,7 @@
 package com.strangeoctopus.protocol;
 
 /**
+ *  @author strangeOctopus
  * 插件方法名称
  */
 public class FunctypeName {

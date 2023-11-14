@@ -8,7 +8,9 @@ import java.util.Map;
 public class ComponentRegister {
 	private static ComponentRegister instance = new ComponentRegister();
 
-	//注册列表类 String为包 Protocol通用调用函数的接口的实例化对象
+	/**
+	 * 	注册列表类 String为包 Protocol通用调用函数的接口的实例化对象
+	 */
 	private Map<String, Protocol> map = new HashMap<String, Protocol>();
 
 	public static ComponentRegister getInstance() {
@@ -22,6 +24,7 @@ public class ComponentRegister {
 	public synchronized Protocol getComponent(String name) {
 		return map.get(name);
 	}
+
 	/**
 	 * 通用调用函数
 	 * //具体模块初始化完成后会调用该接口完成注册 一般在xxxApplication中调用
